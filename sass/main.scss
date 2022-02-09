@@ -81,4 +81,7 @@ nav {
 }
 .navigation {
   color: $color-text-white;
+  li {
+    text-decoration: none;
+  }
 }
