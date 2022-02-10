@@ -8,11 +8,8 @@
   @extend %flex;
   color: $col-white;
   height: 80vh;
-  background-image: linear-gradient(
-      to right,
-      rgba(43, 255, 124, 0.227) rgba(0, 255, 76, 0.248)
-    )
-    url(/images/hero.jpg);
+  background-image: url(/images/hero.jpg)
+    linear-gradient(to right, rgba(43, 255, 124, 0.227) rgba(0, 255, 76, 0.248));
   clip-path: polygon(0 0, 100% 0, 100% 75%, 10% 100%, 0 100%);
   background-position: center;
 
