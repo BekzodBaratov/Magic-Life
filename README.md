@@ -1,5 +1,5 @@
 # Project in lesson with Sass
--Variables
+- Variables
 -Nesting
 -Mixins
 -Extends
