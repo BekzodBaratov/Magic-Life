@@ -1,0 +1,10 @@
+@mixin padmar($pad, $bor, $mar, $borr) {
+  padding: $pad;
+  border: $bor;
+  margin: $mar;
+  border-radius: $borr;
+}
+@mixin txtFont($fsize, $col) {
+  font-size: $fsize;
+  color: $col;
+}

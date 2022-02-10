@@ -1,0 +1,10 @@
+button {
+  background-color: $col-white;
+  @include padmar(1rem, 0, 0, 1rem);
+  cursor: pointer;
+  color: $dark-color;
+  animation: txt 1s ease-out forwards;
+  transform: translateY(10rem);
+  opacity: 0;
+  animation-delay: 1s;
+}

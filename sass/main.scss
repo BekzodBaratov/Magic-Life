@@ -1,0 +1,46 @@
+@import "base/reset";
+
+@import "abstracts/variables";
+@import "abstracts/include";
+@import "abstracts/mixins";
+
+.header-section {
+  @extend %flex;
+  color: $col-white;
+  height: 80vh;
+  background-image: url(/images/hero.jpg),
+    linear-gradient(to right, rgba(0, 255, 98, 0.898), rgba(0, 255, 76, 0.383));
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 10% 100%, 0 100%);
+  background-position: center;
+
+  .head-logo {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 10vw;
+  }
+}
+.header-section__txt {
+  text-align: center;
+
+  h1 {
+    @include padmar(0, 0, 2rem, 0);
+    font-size: $fsize * 4;
+    animation: txt 1s ease-out forwards;
+    transform: translateX(-10rem);
+    opacity: 0;
+    animation-delay: 0s;
+  }
+
+  h2 {
+    @include padmar(0, 0, 1rem, 0);
+    font-size: $fsize * 3;
+    animation: txt 1s ease-out forwards;
+    transform: translateX(10rem);
+    opacity: 0;
+    animation-delay: 0.5s;
+  }
+
+  @import "components/buttons";
+}
+@import "base/animations";
