@@ -8,3 +8,10 @@
   font-size: $fsize;
   color: $col;
 }
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

@@ -1,4 +1,4 @@
-button {
+.head_main {
   background-color: $col-white;
   @include padmar(1rem, 0, 0, 1rem);
   cursor: pointer;
@@ -7,4 +7,102 @@ button {
   transform: translateY(10rem);
   opacity: 0;
   animation-delay: 1s;
+}
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    display: inline-block;
+    text-decoration: none;
+    color: $color-primary;
+    border-bottom: 1px solid $color-primary;
+    padding: 0.3rem;
+    transition: 0.3s;
+    margin-top: 2rem;
+  }
+
+  &:hover {
+    color: $col-white;
+    padding: 3px;
+    background-color: $color-primary;
+    transform: translateY(-0.5rem);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.btn-main {
+  &:link,
+  &:visited {
+    font-size: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: $dark-color;
+    background-color: white;
+    padding: 2rem 4rem;
+    border-radius: 4rem;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    transform: translateY(-5px) scale(1.5);
+    box-shadow: 0 1rem 2rem #00000051;
+    opacity: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4rem;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+  }
+
+  &:hover &::before {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+
+  &:focus,
+  &:active {
+    transform: translate(-1px);
+  }
+}
+
+.btn-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-bar {
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+  position: fixed;
+  z-index: 100;
+  background-color: $col-white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.309);
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .menu-item {
+    margin: 0.3rem;
+    width: 3.5rem;
+    height: 0.5rem;
+    background-color: $dark-color;
+    border-radius: 4px;
+  }
 }
