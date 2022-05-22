@@ -9,14 +9,41 @@
     <title>Magic Life</title>
   </head>
   <body>
-    <div class="menu-bar">
-      <div class="menu-item"></div>
-      <div class="menu-item"></div>
-      <div class="menu-item"></div>
+    <div class="navigation">
+      <input
+        type="checkbox"
+        name="check"
+        id="check"
+        class="navigation__check"
+      />
+      <label for="check" class="navigation__btn">
+        <span class="navigation__icon"></span>
+      </label>
+
+      <div class="navigation__background"></div>
+
+      <div class="navigation__menu">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">01 About MagicLife</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">02 your benefits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">03 popular tours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">04 stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">05 book now</a>
+          </li>
+        </ul>
+      </div>
     </div>
+
     <div class="header-section">
-      <div class="header-section__logo">
-        <img src="images/logo-white.png" alt="logo" class="head-logo" />
       </div>
       <div class="header-section__txt">
         <h1>OUTDOORS</h1>
@@ -91,17 +118,17 @@
             <div class="compositions">
               <img
                 class="compositions_photo compositions--1"
-                src="/images/nat-2.jpg"
+                src="images/nat-2.jpg"
                 alt="nat"
               />
               <img
                 class="compositions_photo compositions--2"
-                src="/images/nat-3.jpg"
+                src="images/nat-3.jpg"
                 alt="nat"
               />
               <img
                 class="compositions_photo compositions--3"
-                src="/images/nat-4.jpg"
+                src="images/nat-4.jpg"
                 alt="nat"
               />
             </div>
@@ -184,7 +211,7 @@
                 <div class="back__txt">
                   <p>ONLY</p>
                   <h3 class="card_number">$297</h3>
-                  <a href="#" class="btn-main">BOOK NOW!</a>
+                  <a href="#popup" class="btn-main">BOOK NOW!</a>
                 </div>
               </div>
             </div>
@@ -214,7 +241,7 @@
                 <div class="back__txt">
                   <p>ONLY</p>
                   <h3 class="card_number">$497</h3>
-                  <a href="#" class="btn-main">BOOK NOW!</a>
+                  <a href="#popup" class="btn-main">BOOK NOW!</a>
                 </div>
               </div>
             </div>
@@ -252,6 +279,135 @@
         </div>
         <a href="#" class="btn-main btn-center">DISCOVER ALL TOURS</a>
       </section>
+      <section class="comment-section">
+        <div class="banner">
+          <video
+            autoplay
+            muted
+            loop
+            src="images/video.mp4"
+            type="video/mp4"
+          ></video>
+        </div>
+        <h2 class="heading-secondary u-text-center">
+          WE MAKE PEOPLE GENUINELY HAPPY
+        </h2>
+        <div class="card">
+          <div class="card__item card__item--1">
+            <div class="card__item--img">
+              <img src="images/nat-8.jpg" alt="nat" />
+            </div>
+            <div class="crad__item--txt">
+              <h3>i had the best week ever with my family</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+                neque possimus. Delectus optio unde voluptatibus repellat
+                ratione esse velit et qui, amet quas voluptas numquam? Harum
+                quos blanditiis amet incidunt maiores aliquam sit, tempora id
+                consequuntur quam eaque sed corrupti molestias atque accusantium
+                explicabo repellendus?
+              </p>
+            </div>
+          </div>
+          <div class="card__item card__item--2">
+            <div class="card__item--img">
+              <img src="images/nat-9.jpg" alt="nat" />
+            </div>
+            <div class="crad__item--txt">
+              <h3>i had the best week ever with my family</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+                neque possimus. Delectus optio unde voluptatibus repellat
+                ratione esse velit et qui, amet quas voluptas numquam? Harum
+                quos blanditiis amet incidunt maiores aliquam sit, tempora id
+                consequuntur quam eaque sed corrupti molestias atque accusantium
+                explicabo repellendus?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-main__center">
+          <a href="#" class="btn-text">read all stories &rarr;</a>
+        </div>
+      </section>
+      <section class="login-section">
+        <div class="login">
+          <div class="txt">
+            <h2 class="heading-secondary">Start booking now</h2>
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name" placeholder="name" />
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+            />
+            <div class="radio">
+              <input type="radio" name="small" id="small" />
+              <label for="small">Small tour group</label>
+              <input type="radio" name="large" id="large" />
+              <label for="large">large tour group</label>
+            </div>
+            <div class="btn-main">
+              <div class="btn-center">Next Step &rarr;</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-section">
+        <div class="footer__logo">
+          <img src="./images/logo-green-1x.png" alt="logo" />
+        </div>
+        <div class="footer__txt">
+          <div class="row">
+            <div class="col-1-of-2">
+              <nav class="footer-nav">
+                <a href="#" class="heading-secondary">company</a>
+                <a href="#" class="heading-secondary">contact us</a>
+                <a href="#" class="heading-secondary">carrers</a>
+                <a href="#" class="heading-secondary">privacy policy</a>
+                <a href="#" class="heading-secondary">terms</a>
+              </nav>
+            </div>
+            <div class="col-1-of-2">
+              <div class="footer__me">
+                Build by
+                <a href="#" class="heading-secondary">Bekzod Baratov</a> Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.
+                <a href="#" class="heading-secondary">Advanced Css and SASS</a>
+                Ratione tenetur aperiam alias sapiente dolorum voluptate
+                laudantium voluptatem assumenda. Impedit, magni sequi blanditiis
+                ut, qui rerum pariatur illo minus enim quis, officiis velit.
+                Alias similique id, tenetur vel blanditiis optio! Enim?
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="popup" id="popup">
+        <div class="popup__content">
+          <div class="popup__left">
+            <img src="./images/nat-8.jpg" alt="nat" class="popup__icon">
+            <img src="./images/nat-9.jpg" alt="nat" class="popup__icon">
+          </div>
+          <div class="popup__right">
+            <h2 class="heading-secondary">
+              Start booking now!
+            </h2>
+            <h3 class="heading-tertiary">
+              Important - Please read these terms before booking
+            </h3>
+            <div class="popup__p">
+            <p class="popup__txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, possimus unde. Explicabo debitis possimus, amet hic tenetur quos consequatur numquam. Quas voluptatum beatae consectetur fuga vero eveniet laboriosam autem, ducimus quibusdam, porro nobis eaque fugit necessitatibus nesciunt saepe esse modi ex, dignissimos aspernatur libero facilis odit at! Illum, tenetur ad.</p>
+            <p class="popup__txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, possimus unde. Explicabo debitis possimus, amet hic tenetur quos consequatur numquam. Quas voluptatum beatae consectetur fuga vero eveniet laboriosam autem, ducimus quibusdam, porro nobis eaque fugit necessitatibus nesciunt saepe esse modi ex, dignissimos aspernatur libero facilis odit at! Illum, tenetur ad.</p>
+            </div>
+            <a href="#" class="btn btn-main">book now</a>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

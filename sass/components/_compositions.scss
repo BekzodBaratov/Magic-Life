@@ -14,22 +14,22 @@
 
     &:hover {
       outline-offset: 1rem;
-      outline: 0.5rem solid $color-primary;
-      transform: scale(1.2);
-      z-index: 20;
+      outline: 1rem solid $color-primary;
+      transform: scale(1.1);
+      z-index: 10;
     }
   }
 
   &--1 {
-    top: -3rem;
+    top: -6rem;
     left: 0;
   }
   &--2 {
     top: 0rem;
-    left: 20rem;
+    left: 25rem;
   }
   &--3 {
-    top: 8rem;
-    left: 10rem;
+    top: 10rem;
+    left: 13rem;
   }
 }

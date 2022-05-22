@@ -1,0 +1,48 @@
+.section-features {
+  background-image: linear-gradient(#25ff256b, #00ffa660),
+    url(../images/nat-4.jpg);
+
+  background-size: cover;
+  margin-top: -10rem;
+  padding: 20rem 0px;
+  transform: skewY(-7deg);
+
+  .row {
+    transform: skewY(7deg);
+    text-align: center;
+  }
+
+  .col-1-of-4 {
+    background-color: $col-white;
+    color: $color-txt-dark;
+    height: 30rem;
+    padding: 3rem;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    transition: 0.3s;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.288);
+
+    .card-icon {
+      margin-bottom: 4rem;
+      display: inline-block;
+      font-size: 6rem;
+      background-image: linear-gradient(to right bottom, #7ed56fcc, #28b485cc);
+      -webkit-background-clip: quote($string: "");
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .heading-secondary {
+      margin-bottom: 1rem;
+      font-size: $default-font-size;
+    }
+
+    .txt {
+      line-height: 1.5;
+    }
+    &:hover {
+      transform: scale(1.05) translateY(-2rem);
+    }
+  }
+}

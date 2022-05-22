@@ -1,0 +1,68 @@
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.473);
+  padding-right: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 3rem;
+    background-color: #f0f0f0;
+    width: 80%;
+    min-height: 70vh;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.514);
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-100%, -100%);
+    transition: all 1s cubic-bezier(1, -1.16, 0, 2.26);
+  }
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  &:target &__content {
+    transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__icon {
+    width: 100%;
+  }
+
+  &__right {
+    padding: 3rem 3rem 3rem 0;
+  }
+
+  .heading-secondary {
+    margin-bottom: 1rem;
+  }
+
+  &__p {
+    display: flex;
+    gap: 3rem;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    color: $color-txt-dark;
+  }
+
+  .btn {
+    margin-top: 3rem;
+    background-color: $color-primary;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-txt-dark;
+  }
+}

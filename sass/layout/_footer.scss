@@ -1,0 +1,36 @@
+.footer-section {
+  background-color: #333;
+  color: $col-white;
+  padding: 5rem 0 10rem;
+}
+.footer__logo {
+  text-align: center;
+  padding: 5rem 0;
+}
+.footer__txt {
+  a {
+    text-decoration: none;
+    color: $col-white;
+    font-size: 1.2rem;
+    margin: 0 1.8rem;
+
+    &:hover {
+      color: green;
+    }
+  }
+
+  .footer-nav {
+    border-top: 1px solid white;
+    padding: 3rem 0;
+  }
+
+  .footer__me {
+    border-top: 1px solid $col-white;
+    font-size: 1.2rem;
+    line-height: 2;
+    padding: 3rem 0;
+    a {
+      margin: 0;
+    }
+  }
+}

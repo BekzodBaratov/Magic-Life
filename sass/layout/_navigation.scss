@@ -1,0 +1,149 @@
+.navigation {
+  &__check {
+    display: none;
+  }
+
+  &__btn {
+    background-color: #f0f0f0;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: fixed;
+    cursor: pointer;
+    text-align: center;
+    z-index: 100;
+    box-shadow: 0 0rem 2rem rgba(0, 0, 0, 0.349);
+    top: 6rem;
+    right: 6rem;
+  }
+
+  &__background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    background-image: radial-gradient($color-primary, $color-primary-dark);
+    z-index: 50;
+    right: 6.5rem;
+    top: 6.5rem;
+    transition: 0.5s ease-in;
+  }
+
+  &__check:checked ~ &__background {
+    transform: scale(50);
+  }
+
+  &__menu {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 75;
+    width: 0;
+    // visibility: hidden;
+  }
+  &__check:checked &__menu {
+    width: 100%;
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -50%);
+    list-style: none;
+    text-align: center;
+    z-index: 2500;
+    transition: all 0.8s cubic-bezier(0.78, -0.54, 0.1, 1.48);
+    opacity: 0;
+  }
+
+  &__check:checked ~ &__menu &__list {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    // width: 100%;
+  }
+
+  &__item {
+    margin: 4rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    transition: 0.8s ease-out;
+    padding: 1rem;
+    &:visited,
+    &:link {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      background-image: linear-gradient(
+        105deg,
+        transparent 0%,
+        transparent 50%,
+        white 0%
+      );
+      background-size: 220%;
+      transition: all 0.8s ease-out;
+    }
+    &:hover,
+    &:active {
+      background-position: right;
+      color: $color-primary;
+      transform: translateX(1rem);
+    }
+  }
+
+  &__icon {
+    position: relative;
+    top: 40%;
+    transition: all 0.8s linear;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &,
+    &::after,
+    &::before {
+      content: "";
+      width: 3rem;
+      height: 3px;
+      background-color: $color-txt-dark;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      transition: all 0.8s linear;
+    }
+
+    &::before {
+      content: "";
+      top: -0.8rem;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      top: 0.8rem;
+      left: 0;
+    }
+  }
+
+  &__check:checked + &__btn &__icon {
+    background-color: transparent;
+
+    &::before {
+      transform: rotate(135deg) translateY(3px);
+      // top: 3px;
+    }
+    &::after {
+      transform: rotate(-135deg) translateY(3px);
+      top: -3px;
+    }
+  }
+}
