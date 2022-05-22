@@ -3,5 +3,6 @@
 - Nesting
 - Mixins
 - Extends
-- Function.
+- Function
+
 https://bekzodbaratov.github.io/practica/
